@@ -1,0 +1,77 @@
+Name; WAQAS GHAFOOR
+CLASS; BSCS 6
+ROLL NO; 55
+
+Q1;How to launch swi-prolog on command line?  
+  SWI-Prolog can be executed in one of the following modes:
+  swipl --help
+  swipl --version
+  swipl --arch
+  swipl --dump-runtime-variables
+  REFRENCE: SWI-PROLOG COMMAND LINE..
+
+Q2;What is the extension of a prolog Knowledge Base?  
+  (.pl) is the extension of a prolog knowledge base...
+ 
+Q3;How to load a knowledge base in prolog?  
+  (kb1.pl)
+  wizard(harry).
+  wizard(ron).
+  wizard(hermione).
+  muggle(uncle_vernon).
+  muggle(aunt_petunia).
+  chases(crookshanks,scabbars).
+  (kb2.pl)
+  kicking(malfoy,harry).
+  eating(dudley).
+
+  happy(aunt_petunia) :- happy(dudley).
+  happy(uncle_vernon) :- happy(dudley), unhappy(harry).
+  happy(dudley) :- kicking(dudley,harry).
+  happy(dudley) :- eating(dudley).
+
+  (kb3.pl)
+  father(albert,james).
+  father(james,harry).
+  mother(ruth,james).
+  mother(lili,harry).
+
+  wizard(lili).
+  wizard(ruth).
+  wizard(albert).
+  wizard(X) :-
+  father(Y,X),
+  wizard(Y),
+  mother(Z,X),
+  wizard(Z).
+  refrence;Google.com
+ 
+Q4;How to exit a prolog session?  
+   ctrl d & halt...
+ 
+Q5;How to get help on a topic from within prolog?  
+   FROM prolog enviromental tutorial...refrence; google.com
+ 
+Q6;What is an atom?  
+   Prolog is dynamically typed. It has a single data type, the term, which has several subtypes: atoms, numbers, variables and compound terms. An atom is a general-purpose name with no inherent meaning. It is composed of a sequence of characters that is parsed by the Prolog reader as a single unit.
+   refrence;Google.com
+ 
+Q7;What is a term?  
+   True when Term is a term with functor Name / Arity . If Term is a variable it is unified with a new term whose arguments are all different variables.
+   refrence;Google.com
+
+Q8;What is functor?  
+   The rules for Prolog functor names (identifiers) are the same as for Prolog atoms. Functors are syntactic units that have a finite number of arguments ("arity"), and if a functor is supplied with terms for those arguments, then we get a compound term.
+   refrence;Google.com
+ 
+Q9;What are complex terms?
+   The number of arguments
+
+Q10;What is predicate? 
+    A collection of clausses which donate a property.
+
+Q11;What is arity of predicate?  
+   Pred and N arguments called a predicate indicator
+
+Q12;What is unification?
+   The camparision of two or more than two terms
